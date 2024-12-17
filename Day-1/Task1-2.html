@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1-2</title>
+
+    <style>
+      body{
+        font-family: Verdana;
+      }
+        .container-fluid{
+          width: 40%;
+          border: 10px solid rgb(22, 77, 140);
+          background-color: rgb(22, 77, 140);
+        }
+
+        .container{
+            padding: 2%;
+            background-color: rgba(246, 246, 246,0.5);
+        }
+
+        .content{
+          border: 8px solid rgb(22, 77, 140);
+          border-radius: 13px;
+          background-color: rgb(179, 179, 233);
+        }
+
+        .row{
+            display: flex;
+        }
+        .column{
+            flex: 50%;
+        }
+
+        #mail,
+        #bio{
+          width: 95%;
+        }
+
+        label{
+            color: #3aa336;
+            font-weight: bold;
+        }
+
+        input{
+          margin-top: 1%;
+          /* height: 25px; */
+          /* width: 80%; */
+        }
+
+        #header{
+          text-align: center;
+        }
+
+        .btn-submit{
+          background-color: #3aa336;
+        }
+
+        .footer{
+          margin: 15px 15px 15px 500px;
+          /* align-content: end; */
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="content">
+        <div class="header-footer">
+            <h2 id="header">Create Account</h2>
+        <div class="container">
+        <div class="row">
+            <div class="column">
+        <label for="firstname">First name *</label><br />
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="enter your first name"
+          required
+        /><br /><br />
+    </div>
+    <div class="column">
+        <label for="lastname">Last name</label><br />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="enter your last name"
+        /><br /><br />
+    </div></div>
+        <label for="mail">Email*</label><br />
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="enter your email"
+          required
+        /><br /><br />
+        <div class="row">
+            <div class="column">
+        <label for="password">Password *</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="enter your password"
+          required
+        /><br /><br /></div>
+            <div class="column">
+        <label for="confirmpassword">Confirm Password *</label><br />
+        <input
+          type="password"
+          id="confirmpassword"
+          name="confirmpassword"
+          placeholder="enter your passoword again"
+          required
+        /><br /><br /></div></div>
+        <div class="row">
+            <div class="column">
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="gender" name="gender" value="Male" required />
+        Male
+        <input type="radio" id="gender" name="gender" value="Female" required />
+        Female<br /><br /></div>
+            <div class="column">
+        <label for="hobbies">Hobbies</label><br />
+        <input type="checkbox" id="hobbies" name="hobbies" value="Music" />Music
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Sports"
+        />Sports
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Travel"
+        />Travel
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Movies"
+        />Movies <br /><br /></div></div>
+        <div class="row">
+            <div class="column">
+        <label for="dropdown-menu">Source of Income</label><br />
+        <select id="dropdown-menu" name="dropdown-menu">
+          <option value="Employed" name="dropdown-menu">Employed</option>
+          <option value="Dropdown" name="dropdown-menu">Dropdown</option>
+          <option value="Menu" name="dropdown-menu">Menu</option>
+        </select>
+        <br /><br /></div>
+            <div class="column">
+        <label for="income">Income</label><br />
+        <input
+          type="range"
+          name="income"
+          id="income"
+          maxlength="20000"
+          value="1"
+        />
+        <label>20K</label> <br /><br /></div></div>
+        <div class="row">
+            <div class="column">
+        <label for="file-upload">Upload Profile Picture</label><br />
+        <input type="file" id="file-upload" name="file-upload" accept="image/*, .pdf" />
+        <br /><br /></div>
+            <div class="column">
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" placeholder="18" />
+        <br /><br /></div></div>
+        <label for="bio">Bio</label><br />
+        <textarea name="bio" id="bio" cols="*" rows="*"></textarea>
+        <br /><br />
+      </div>
+      <div class="footer">
+        <input type="submit" class="btn-submit" value="Create" />
+        </div>
+    </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
+
+<!-- 2:37 -->
+<!-- 3:44 -->
